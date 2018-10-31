@@ -15,7 +15,7 @@ body{
     /* sets the height of the section to 100% of the height of the viewport in another way it will fill the screen */
     height: 100vh;
     text-align: center;
-    background-image: url('/imgs/code-820275_1920.jpg');
+    background-image: url('imgs/code-820275_1920.jpg');
     background-size: cover;
 }
 /* this is for the grayd box in the middle of the section  */
