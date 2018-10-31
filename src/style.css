@@ -1,0 +1,56 @@
+body{
+    /* Those two main colors are variables to use them you can do for example var(--main-color) */
+    --main-color:#ff5757;
+    --main-color-darker:#d14c4c;
+    font-family: sans-serif;
+    /* those two lines to disable horizontal scrolling  */
+    max-width: 100%;
+    overflow-x: hidden;
+    /* those other two line to reset margin and padding for the whole page. */
+    margin: 0;
+    padding: 0;
+}
+/* the if of the first section  */
+#learn-more{
+    /* sets the height of the section to 100% of the height of the viewport in another way it will fill the screen */
+    height: 100vh;
+    text-align: center;
+    background-image: url('/imgs/code-820275_1920.jpg');
+    background-size: cover;
+}
+/* this is for the grayd box in the middle of the section  */
+.box{
+    display: inline-block;
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    margin-top:30vh;
+    padding-top: 5vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+.head-line{
+    font-size: 60pt;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color:#fff;
+}
+.tag-line{
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20pt;
+    /* this how you can use the variable */
+    color:var(--main-color);
+}
+.button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    padding: 1em 3em;
+    color:#fff;
+    font-size: 12pt;
+    background-color: var(--main-color);
+}
+/* darken the background color of the button when the mouse is in the top of the button */
+.button:hover{
+    background-color:var(--main-color-darker);
+}

@@ -9,8 +9,6 @@ https://www.canva.com/design/DADHnt3ZJRc/6LDi4-inhofRvzrxC7LxJw/view?website#4:o
 
 - If there is a probleam in the design or the code you can create an issue for it.
 
-- If you changed something create a pull request instead of directly pushing to the repo.
-
 - Document everything.
 
 - Naming convention is really important.
