@@ -54,3 +54,34 @@ body{
 .button:hover{
     background-color:var(--main-color-darker);
 }
+
+/***** Learn Together Section *****/
+#learn-together {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+#learn-image {
+  height: 100%;
+  width: 50%;
+  background-image: url('../imgs/team-3373638_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#learn-info {
+  background-color: var(--main-color);
+  width: 50%;
+  padding: 25px 25px 0 25px;
+}
+
+.section-header {
+  font-size: 5em;
+}
+
+.section-info {
+  font-size: 1.5em;
+  color: #fff;
+}
