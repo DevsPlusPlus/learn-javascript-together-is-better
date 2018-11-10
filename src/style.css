@@ -17,15 +17,17 @@ body{
     text-align: center;
     background-image: url('../imgs/code-820275_1920.jpg');
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* this is for the grayd box in the middle of the section  */
 .box{
+    padding-top: 2.5em;
     display: inline-block;
     position: relative;
     height: 40vh;
     width: 100%;
-    margin-top:30vh;
-    padding-top: 5vh;
     background-color: rgba(0, 0, 0, .5);
 }
 .head-line{
@@ -56,15 +58,16 @@ body{
 }
 
 /***** Learn Together Section *****/
+
 #learn-together {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "learn-image learn-info";
 }
 
 #learn-image {
-  height: 100%;
-  width: 50%;
+  grid-area: learn-image;
   background-image: url('../imgs/team-3373638_1920.jpg');
   background-size: cover;
   background-position: center;
@@ -72,9 +75,9 @@ body{
 }
 
 #learn-info {
+  grid-area: learn-info;
   background-color: var(--main-color);
-  width: 50%;
-  padding: 25px 25px 0 25px;
+  padding: 25px 25px 25px 25px;
 }
 
 .section-header {
@@ -84,4 +87,68 @@ body{
 .section-info {
   font-size: 1.5em;
   color: #fff;
+}
+
+
+/**** MEDIA QUERIES ****/
+
+@media(max-width: 900px) {
+  .section-header {
+    font-size: 4em;
+  }
+
+  .section-info {
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width: 700px) {
+  .head-line {
+    font-size: 3em;
+  }
+
+  .tag-line {
+    font-size: 1.5em;
+  }
+
+  .section-header {
+    font-size: 3em;
+  }
+
+  .section-info {
+    font-size: 1.25em;
+  }
+}
+
+@media(max-height: 650px) {
+  #learn-more-btn {
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 600px) {
+  #learn-together {
+    grid-template-areas:
+      "learn-info learn-info"
+      "learn-image learn-image";
+  }
+
+  #learn-image {
+    height: 300px;
+  }
+
+  .section-header {
+    font-size: 2em;
+  }
+
+  .section-info {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media(max-height: 400px) {
+  .head-line {
+    font-size: 2em;
+  }
 }
