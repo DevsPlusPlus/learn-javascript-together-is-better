@@ -1,154 +1,177 @@
-body{
-    /* Those two main colors are variables to use them you can do for example var(--main-color) */
-    --main-color:#ff5757;
-    --main-color-darker:#d14c4c;
-    font-family: sans-serif;
-    /* those two lines to disable horizontal scrolling  */
-    max-width: 100%;
-    overflow-x: hidden;
-    /* those other two line to reset margin and padding for the whole page. */
-    margin: 0;
-    padding: 0;
+body {
+  /* Those two main colors are variables to use them you can do for example var(--main-color) */
+  --main-color: #ff5757;
+  --main-color-darker: #d14c4c;
+  font-family: sans-serif;
+  /* those two lines to disable horizontal scrolling  */
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* those other two line to reset margin and padding for the whole page. */
+  margin: 0;
+  padding: 0;
 }
-/* the if of the first section  */
-#learn-more{
-    /* sets the height of the section to 100% of the height of the viewport in another way it will fill the screen */
-    height: 100vh;
-    text-align: center;
-    background-image: url('../imgs/code-820275_1920.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/***** common classes *****/
+
+.section-main {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: var(--main-color);
+}
+.header-main {
+  font-size: 7vh;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.info-main {
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3vh;
+  /* this how you can use the variable */
+  color: #fff;
+}
+.section-white {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+.header-white {
+  font-size: 7vh;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.info-white {
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3vh;
+  /* this how you can use the variable */
+  color: var(--main-color);
+}
+
+
+/***** the first section  *****/
+#first-section {
+  background-image: url("../imgs/code-820275_1920.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first-section-header{
+  font-weight: bold;
+}
+#first-section-info{
+  color:var(--main-color);
+  font-weight: bold;
 }
 /* this is for the grayd box in the middle of the section  */
-.box{
-    padding-top: 2.5em;
-    display: inline-block;
-    position: relative;
-    height: 40vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .5);
-}
-.head-line{
-    font-size: 60pt;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    color:#fff;
-}
-.tag-line{
-    font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20pt;
-    /* this how you can use the variable */
-    color:var(--main-color);
-}
-.button{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: none;
-    padding: 1em 3em;
-    color:#fff;
-    font-size: 12pt;
-    background-color: var(--main-color);
-}
-/* darken the background color of the button when the mouse is in the top of the button */
-.button:hover{
-    background-color:var(--main-color-darker);
+.gray-box {
+  display: inline-block;
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/***** Learn Together Section *****/
+/***** the second section *****/
 
-#learn-together {
+#second-section {
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "learn-image learn-info";
+  grid-template-areas: "img info";
 }
 
-#learn-image {
-  grid-area: learn-image;
-  background-image: url('../imgs/team-3373638_1920.jpg');
+#second-section-image {
+  grid-area: img;
+  background-image: url("../imgs/team-3373638_1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #learn-info {
-  grid-area: learn-info;
-  background-color: var(--main-color);
-  padding: 25px 25px 25px 25px;
+  grid-area: info;
+  padding: 1vh;
+  text-align: start;
 }
 
-.section-header {
-  font-size: 5em;
+/***** the third section *****/ 
+#third-section{
+  min-height: 100vh;
+  height: auto;
+}
+#third-section-header{
+  padding-top: 15vh;
+}
+#items-div{
+  padding-top:10vh;
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-around;
+}
+/**** the fourth section  ****/
+#fourth-section{
+}
+#fourth-section-image{
+  background-image: url("../imgs/target.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  margin: 20px;
+  border: var(--main-color) solid 2px;
+}
+#fourth-section-info{
+  font-size:6vw;
 }
 
-.section-info {
-  font-size: 1.5em;
-  color: #fff;
-}
+
+
+
+/***** the fifth section *****/
+
 
 
 /**** MEDIA QUERIES ****/
-
-@media(max-width: 900px) {
-  .section-header {
-    font-size: 4em;
-  }
-
-  .section-info {
-    font-size: 1.5em;
+@media (min-width: 700px) {
+  #fourth-section-image{
+    display: none;
   }
 }
 
-@media(max-width: 700px) {
-  .head-line {
-    font-size: 3em;
-  }
-
-  .tag-line {
-    font-size: 1.5em;
-  }
-
-  .section-header {
-    font-size: 3em;
-  }
-
-  .section-info {
-    font-size: 1.25em;
-  }
-}
-
-@media(max-height: 650px) {
-  #learn-more-btn {
-    visibility: hidden;
-  }
-}
-
-@media(max-width: 600px) {
-  #learn-together {
+@media (max-width: 600px) {
+  /*** the second section ***/
+  #second-section {
     grid-template-areas:
-      "learn-info learn-info"
-      "learn-image learn-image";
+    "info info"
+    "img img";
+  }
+  #second-section-image{
+    min-height: 30vh;
   }
 
-  #learn-image {
-    height: 300px;
+  /*** the third section ***/ 
+  #items-div{
+    padding: 0;
+    flex-direction: column;
   }
-
-  .section-header {
-    font-size: 2em;
-  }
-
-  .section-info {
-    text-align: center;
-    font-size: 1em;
-  }
-}
-
-@media(max-height: 400px) {
-  .head-line {
-    font-size: 2em;
+  #third-section-header{
+    padding:0;
   }
 }
