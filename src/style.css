@@ -32,7 +32,7 @@ body {
 .info-main {
   font-style: italic;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3vh;
   /* this how you can use the variable */
   color: #fff;
@@ -65,7 +65,7 @@ body {
 /***** Navigation *****/
 nav {
   width: 100%;
-  background: #00316b;
+  background: #333;
   position: fixed;
 }
 
@@ -82,18 +82,20 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: #e91e63;
+  background: #fff;
+}
+nav ul li:hover a{
+  color:var(--main-color);
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-
 .toggle {
   width: 100%;
   padding: 10px 20px;
-  background: #001f44;
+  background: #333;
   text-align: right;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -120,7 +122,6 @@ nav ul li a {
 /* this is for the grayd box in the middle of the section  */
 .gray-box {
   display: inline-block;
-  position: relative;
   height: 20vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -159,6 +160,7 @@ nav ul li a {
 
 /***** the third section *****/
 #third-section{
+  padding-top: 10vh;
   min-height: 100vh;
   height: auto;
   display: flex;
@@ -193,10 +195,7 @@ nav ul li a {
 
 /**** the fourth section  ****/
 #fourth-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+  padding-top: 10vh;
 }
 
 #fourth-section-image{
@@ -212,6 +211,49 @@ nav ul li a {
 }
 
 /***** the fifth section *****/
+#fifth-section{
+  padding-top: 10vh;
+  height: auto;
+}
+#team-members{
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-row-gap: 100px;
+  justify-items: center;
+}
+.member{
+  background-size: cover;
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.member a{
+  text-decoration: none;
+  color: #fff;
+}
+.member h2{
+  color: #fff;
+}
+
+/***** Memmbers Photos *****/ 
+
+/*
+ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO members-photos in the imgs folder after that you can write the url like I have done on my id style down here. 
+*/
+
+
+#abod{
+  background-image: url('../imgs/members-photos/Abod.jpg');
+}
+
+
+
 
 
 
@@ -233,6 +275,10 @@ nav ul li a {
 
   .active {
     display: block;
+  }
+
+  #team-members{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -264,4 +310,15 @@ nav ul li a {
   #third-section-header{
     padding:0;
   }
+
+
+}
+
+
+/**** Copy Rights ****/
+#copyrights{
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  display: block;
 }
