@@ -17,7 +17,6 @@ body {
 .section-main {
   height: 100vh;
   width: 100%;
-  text-align: center;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -63,6 +62,45 @@ body {
   color: var(--main-color);
 }
 
+/***** Navigation *****/
+nav {
+  width: 100%;
+  background: #00316b;
+  position: fixed;
+}
+
+nav ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background: #e91e63;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background: #001f44;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
 
 /***** the first section  *****/
 #first-section {
@@ -106,29 +144,61 @@ body {
 }
 
 #learn-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   grid-area: info;
-  padding: 1vh;
+  padding: 20px;
   text-align: start;
 }
 
-/***** the third section *****/ 
+#second-section-header {
+  padding-bottom: 30px;
+}
+
+/***** the third section *****/
 #third-section{
   min-height: 100vh;
   height: auto;
-}
-#third-section-header{
-  padding-top: 15vh;
-}
-#items-div{
-  padding-top:10vh;
   display: flex;
-  
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
+
+#items-div{
+  height: 100%;
+  padding-top:10vh;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "determination passion eachOther";
+}
+
+#determination {
+  grid-area: determination;
+  padding: 10px;
+}
+
+#passion {
+  grid-area: passion;
+  padding: 10px;
+}
+
+#eachOther {
+  grid-area: eachOther;
+  padding: 10px;
+}
+
 /**** the fourth section  ****/
-#fourth-section{
+#fourth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
+
 #fourth-section-image{
   background-image: url("../imgs/target.jpg");
   background-size: cover;
@@ -141,14 +211,31 @@ body {
   font-size:6vw;
 }
 
-
-
-
 /***** the fifth section *****/
 
 
 
 /**** MEDIA QUERIES ****/
+@media (max-width: 820px) {
+  .toggle {
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
 @media (min-width: 700px) {
   #fourth-section-image{
     display: none;
@@ -166,10 +253,13 @@ body {
     min-height: 30vh;
   }
 
-  /*** the third section ***/ 
+  /*** the third section ***/
   #items-div{
     padding: 0;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #third-section-header{
     padding:0;

@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>Let's learn javascript Group</title>
   </head>
   <body>
+<!-- Navigation -->
+  <nav class="mainNav">
+
+    <div class="toggle">
+      <i class="fas fa-bars menu" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#second-section">Better Together</a></li>
+      <li><a href="#third-section">What We Have</a></li>
+      <li><a href="#fourth-section">Our Goal</a></li>
+      <li><a href="#fifth-section">Our Members</a></li>
+    </ul>
+  </nav>
+
 <!-- First Section  -->
     <section id="first-section" class="section-main">
       <div class="gray-box">
           <h1 id="first-section-header" class="header-main">LET'S LEARN JS</h1>
           <p id="first-section-info" class="info-main">learning Javascript is better together</p>
-          <br>
       </div>
     </section>
 
@@ -21,7 +38,7 @@
     <section id="second-section" class="section-white">
         <div id="second-section-image"></div>
         <div id="learn-info">
-            <h1 class="header-white">WE LEARN BETTER TOGETHER</h1>
+            <h1 class="header-white" id="second-section-header">WE LEARN BETTER TOGETHER</h1>
             <p class="info-white">
             We love to learn together because we believe that it accelerates our
             learning curve and helps us learn from our mistakes. <br> We gain
@@ -37,34 +54,22 @@
             WHAT WE HAVE
         </h1>
         <div id="items-div">
-                <div class="col">
-    
-                    <img src="https://via.placeholder.com/200">
-    
-                    <h3 class="sub-headers">LOVE</h3>
-    
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-    
+                <div class="col" id="determination">
+                    <i class="fas fa-medal fa-10x"></i>
+                    <h3 class="sub-headers">DETERMINATION</h3>
+                    <p>We are determined to grow and learn as developers and improve our skills</p>
                 </div>
-    
-                <div class="col">
-    
-                    <img src="https://via.placeholder.com/200">
-    
-                    <h3 class="sub-headers">PASSIONATE</h3>
-    
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-    
+
+                <div class="col" id="passion">
+                    <i class="fas fa-heart fa-10x"></i>
+                    <h3 class="sub-headers">PASSION</h3>
+                    <p>We are passionate about programming and we are looking forward to turning it into a career.</p>
                 </div>
-    
-                <div class="col">
-    
-                    <img src="https://via.placeholder.com/200">
-    
+
+                <div class="col" id="eachOther">
+                    <i class="fas fa-users fa-10x"></i>
                     <h3 class="sub-headers">EACH OTHER</h3>
-    
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-    
+                    <p>We learn better together and can lean on each other to gain experience.  Kindness and helping others is always a top priority.</p>
                 </div>
         </div>
     </section>
@@ -85,7 +90,7 @@
         </div>
     </section>
 
-    
+
     <!-- Fifth Section  -->
     <section id="fifth-section" class="section-main">
         <h1 class="header-main">OUR TEAM MEMBERS</h1>
@@ -108,7 +113,7 @@
 
       <section id="learn-together">
 
-        
+
 
       </section>
 
@@ -116,10 +121,13 @@
 
           <h1 id="what-we-have-header">WHAT WE HAVE</h1>
 
-          
+
 
 
       </section>
     -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type = "text/javascript" src = "./js/main.js"></script>
   </body>
 </html>
