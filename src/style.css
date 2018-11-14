@@ -256,6 +256,10 @@ ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO mem
   background-image: url('../imgs/members-photos/katelinFrederick.jpg');
 }
 
+#example{
+  background-image: url('../imgs/members-photos/example.jpg');
+}
+
 
 
 
