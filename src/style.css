@@ -241,10 +241,10 @@ nav ul li a {
   color: #fff;
 }
 
-/***** Memmbers Photos *****/ 
+/***** Memmbers Photos *****/
 
 /*
-ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO members-photos in the imgs folder after that you can write the url like I have done on my id style down here. 
+ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO members-photos in the imgs folder after that you can write the url like I have done on my id style down here.
 */
 
 
@@ -252,7 +252,9 @@ ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO mem
   background-image: url('../imgs/members-photos/Abod.jpg');
 }
 
-
+#katelinFrederick {
+  background-image: url('../imgs/members-photos/katelinFrederick.jpg');
+}
 
 
 
