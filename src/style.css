@@ -239,6 +239,7 @@ nav ul li a {
 }
 .member h2{
   color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 /***** Memmbers Photos *****/
@@ -254,10 +255,6 @@ ADD YOUR PHOTOS ID HERE BY WRITING YOUR DIV ID AND THEN IMPORT YOUR PHOTO TO mem
 
 #katelinFrederick{
   background-image: url('../imgs/members-photos/katelinFrederick.jpg');
-}
-
-#katelinFrederick h2 {
-  text-shadow: 2px 2px #000; 
 }
 
 
