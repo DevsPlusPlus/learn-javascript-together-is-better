@@ -84,11 +84,11 @@ nav ul li {
 nav ul li:hover {
   background: #fff;
 }
-nav ul li:hover a{
-  color:var(--main-color);
+nav ul a li:hover {
+  color: var(--main-color);
 }
 
-nav ul li a {
+nav ul a li {
   text-decoration: none;
   color: #fff;
 }
