@@ -7,7 +7,7 @@ Here is the design of the web page.
 
 https://www.canva.com/design/DADHnt3ZJRc/6LDi4-inhofRvzrxC7LxJw/view?website#4:our-team-members:6
 
-- If there is a probleam in the design or the code you can create an issue for it.
+- If there is a problem in the design or the code you can create an issue for it.
 
 - Document everything.
 
